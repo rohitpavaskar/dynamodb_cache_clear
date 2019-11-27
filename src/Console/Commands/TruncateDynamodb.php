@@ -39,7 +39,7 @@ class TruncateDynamodb extends Command {
      */
     public function handle() {
         Config::set('cache.default', 'file');
-        $dynamoDbTableName = Config::get('cache.stores.dynamodb.table') . '_2';
+        $dynamoDbTableName = Config::get('cache.stores.dynamodb.table');
         $dunamoDB = AWS::createClient('dynamodb');
         try {
             $status = $dunamoDB->deleteTable([
