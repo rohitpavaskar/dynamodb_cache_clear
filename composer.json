@@ -1,0 +1,30 @@
+{
+    "name": "rohitpavaskar/dynamodb_cache_clear",
+    "description": "Clear Dynamodb cache using command as we are unable to trauncate it",
+    "type": "library",
+    "require": {
+        "php": ">=7",
+        "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x|6.0.x",
+	"aws/aws-sdk-php-laravel": "^3.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rohit Pavaskar",
+            "email": "rohitpavaskar.19@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rohitpavaskar\\DynamodbCacheClear\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rohitpavaskar\\DynamodbCacheClear\\DynamodbCacheClearServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
